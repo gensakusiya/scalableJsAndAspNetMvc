@@ -1,0 +1,75 @@
+@{
+  Layout = null;
+}
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+  "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <title>Jasmine Spec Runner</title>
+
+    <link rel="shortcut icon" type="image/png" href="@Url.Content("~/Content/jasmine/jasmine_favicon.png")">
+    <link rel="stylesheet" type="text/css" href="@Url.Content("~/Content/jasmine/jasmine.css")">
+    <script type="text/javascript" src="@Url.Content("~/Scripts/jasmine/jasmine.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/Scripts/jasmine/jasmine-html.js")"></script>
+
+    <!-- include source files here... -->
+    <script src="@Url.Content("~/Scripts/core/namespace/namespace.js")"></script>
+    <script src="@Url.Content("~/Scripts/core/namespace/coreNamspace.js")"></script>
+    
+    <script src="@Url.Content("~/Scripts/core/descriptions/coreVersionDescription.js")"></script>
+    <script src="@Url.Content("~/Scripts/core/descriptions/coreThrowDescription.js")"></script>
+    
+    <script src="@Url.Content("~/Scripts/library/router/director.js")"></script>
+
+    <script src="@Url.Content("~/Scripts/core/engines/coreEngine.js")"></script>
+    <script src="@Url.Content("~/Scripts/core/engines/eventEngine.js")"></script>
+    <script src="@Url.Content("~/Scripts/core/engines/resourceEngine.js")"></script>
+
+    <script src="@Url.Content("~/Scripts/core/engines/moduleEngine.js")"></script>
+    <script src="@Url.Content("~/Scripts/core/engines/sandboxEngine.js")"></script>
+    
+    <script src="@Url.Content("~/Scripts/core/engines/routingEngine.js")"></script>
+
+    <script src="@Url.Content("~/Scripts/core/core.js")"></script>
+
+    <!-- include spec files here... -->
+    <script src="@Url.Content("~/Scripts/tests/specs/eventEngineSpec.js")"></script>
+    <script src="@Url.Content("~/Scripts/tests/specs/coreSpec.js")"></script>
+
+    <script type="text/javascript">
+        (function() {
+            var jasmineEnv = jasmine.getEnv();
+            jasmineEnv.updateInterval = 1000;
+
+            var htmlReporter = new jasmine.HtmlReporter();
+
+            jasmineEnv.addReporter(htmlReporter);
+
+            jasmineEnv.specFilter = function(spec) {
+                return htmlReporter.specFilter(spec);
+            };
+
+            var currentWindowOnload = window.onload;
+
+            window.onload = function() {
+                if (currentWindowOnload) {
+                    currentWindowOnload();
+                }
+                execJasmine();
+            };
+
+            function execJasmine() {
+                jasmineEnv.execute();
+            }
+
+        })();
+
+        var core = ApplicationCore.Core.getInstance();
+        core.startApplication();
+    </script>
+
+</head>
+
+<body>
+</body>
+</html>

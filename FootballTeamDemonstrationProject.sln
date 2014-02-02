@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Frontend", "Frontend", "{2551FCB3-20F5-4B4E-8902-B917B773CAE6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{451A3CE8-3ED7-424A-ABA6-7F6140EAB6EA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WebApp", "WebApp", "{CDF7CFE5-EAC6-4265-8AF4-2F779FE57896}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClientSide.Core", "ClientSide.Core\ClientSide.Core.csproj", "{00F19EFD-271C-4981-9947-346596C2C3CF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Account", "Account\Account.csproj", "{7C538DC0-0CDE-40FE-A785-CA8361FE62C2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{00F19EFD-271C-4981-9947-346596C2C3CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{00F19EFD-271C-4981-9947-346596C2C3CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{00F19EFD-271C-4981-9947-346596C2C3CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{00F19EFD-271C-4981-9947-346596C2C3CF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7C538DC0-0CDE-40FE-A785-CA8361FE62C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C538DC0-0CDE-40FE-A785-CA8361FE62C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C538DC0-0CDE-40FE-A785-CA8361FE62C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C538DC0-0CDE-40FE-A785-CA8361FE62C2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{451A3CE8-3ED7-424A-ABA6-7F6140EAB6EA} = {2551FCB3-20F5-4B4E-8902-B917B773CAE6}
+		{CDF7CFE5-EAC6-4265-8AF4-2F779FE57896} = {2551FCB3-20F5-4B4E-8902-B917B773CAE6}
+		{00F19EFD-271C-4981-9947-346596C2C3CF} = {451A3CE8-3ED7-424A-ABA6-7F6140EAB6EA}
+		{7C538DC0-0CDE-40FE-A785-CA8361FE62C2} = {CDF7CFE5-EAC6-4265-8AF4-2F779FE57896}
+	EndGlobalSection
+EndGlobal

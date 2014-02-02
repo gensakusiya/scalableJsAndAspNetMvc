@@ -1,0 +1,45 @@
+﻿@{
+    ViewBag.Title = "Трансферный лист";
+}
+
+<h2>Трансферный лист</h2>
+
+@section scripts
+{
+    <script src="@Url.Content("~/Scripts/application/namespaces.js")"></script>
+    <script src="@Url.Content("~/Scripts/sandboxes/descriptions/transferListDescription.js")"></script>
+
+    <script src="@Url.Content("~/Scripts/modules/descriptions/positionMenuDescription.js")"></script>
+    <script src="@Url.Content("~/Scripts/modules/descriptions/transfersButtonsRegionDescription.js")"></script>
+    <script src="@Url.Content("~/Scripts/modules/descriptions/transfersTableDescription.js")"></script>
+    <script src="@Url.Content("~/Scripts/modules/descriptions/addTransferDialogDescription.js")"></script>
+    
+    <script src="@Url.Content("~/Scripts/modules/implementations/positionMenu.js")"></script>
+    <script src="@Url.Content("~/Scripts/modules/implementations/tableButtonsRegion.js")"></script>
+    <script src="@Url.Content("~/Scripts/modules/implementations/transfersTable.js")"></script>
+    <script src="@Url.Content("~/Scripts/modules/implementations/addTransferDialog.js")"></script>
+
+    <script>
+        window.onload = function () {
+            if (ApplicationCore) {
+                var options = {
+                        Sandboxes: Application.Sandboxes,
+                        Modules: Application.Modules
+                    },
+                    core = ApplicationCore.Core.getInstance(options);
+                core.startApplication();
+            } else {
+                console && console.error && console.error('application core undefined');
+            }
+        }
+    </script>
+}
+
+@section templates
+{
+    <script id="PositionMenuTemplate" type="text/template">@Html.Partial("~/Views/Transfers/Templates/PositionMenuTemplate.cshtml")</script>
+    <script id="TransfersListSandbox" type="text/template">@Html.Partial("~/Views/Transfers/Templates/TransfersListSandbox.cshtml")</script>
+    <script id="ButtonsRegionTemplate" type="text/template">@Html.Partial("~/Views/Transfers/Templates/ButtonsRegionTemplate.cshtml")</script>
+    <script id="TransfersTableTemplate" type="text/template">@Html.Partial("~/Views/Transfers/Templates/TransfersTableTemplate.cshtml")</script>
+    <script id="AddTransferDialogTemplate" type="text/template">@Html.Partial("~/Views/Transfers/Templates/AddTransferDialogTemplate.cshtml")</script>
+}

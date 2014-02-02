@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>title</title>
+        
+        @Html.Partial("Bundles/CoreBundleStyles")
+        @Html.Partial("Bundles/CoreBundleScripts")
+        
+        @RenderSection("CustomStyle", false)
+    </head>
+    <body class="metro">
+        <div id="PageContent" class="container">
+            @RenderBody()
+        </div>
+        
+        <div id="Scripts">
+            @RenderSection("scripts", false)    
+        </div>
+        
+        <div id="Templates">
+            @RenderSection("templates", false)    
+        </div>
+    </body>
+</html>
