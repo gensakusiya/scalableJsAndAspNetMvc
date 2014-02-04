@@ -135,7 +135,6 @@
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Content Include="Content\jasmine\jasmine.css" />
     <Content Include="Content\jasmine\jasmine_favicon.png" />
-    <Content Include="Content\sprites\flags.png" />
     <Content Include="Scripts\core\descriptions\coreRoutingDescription.js" />
     <Content Include="Scripts\core\descriptions\coreThrowDescription.js" />
     <Content Include="Scripts\core\descriptions\coreVersionDescription.js" />
@@ -148,7 +147,6 @@
     <Content Include="Scripts\core\engines\templateEngine.js" />
     <Content Include="Scripts\core\namespace\coreNamspace.js" />
     <Content Include="Scripts\core\namespace\namespace.js" />
-    <Content Include="Scripts\core\templateCore.js" />
     <Content Include="Scripts\jasmine\jasmine-html.js" />
     <Content Include="Scripts\jasmine\jasmine.js" />
     <Content Include="Scripts\tests\specs\coreSpec.js" />
@@ -168,11 +166,8 @@
     <Content Include="Styles\metro-ui\fonts\iconFont.json" />
     <Content Include="Styles\metro-ui\fonts\iconFont.eot" />
     <Content Include="Scripts\jasmine\MIT.LICENSE" />
-    <None Include="Scripts\library\jquery\jquery-2.0.3.intellisense.js" />
     <Content Include="Scripts\core\core.js" />
-    <Content Include="Scripts\library\jquery\jquery-2.0.3.js" />
     <Content Include="Scripts\library\jquery\jquery-2.0.3.min.js" />
-    <Content Include="Styles\sprites\flags.css" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -180,12 +175,13 @@
     <Content Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
-    <Content Include="Scripts\library\jquery\jquery-2.0.3.min.map" />
     <Content Include="Views\Jasmine\SpecRunner.cshtml" />
     <Content Include="Views\Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Content\sprites\" />
     <Folder Include="Scripts\core\extensions\" />
+    <Folder Include="Styles\sprites\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config">

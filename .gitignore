@@ -32,12 +32,3 @@ publish/
 
 # NuGet Packages Directory
 packages/
-
-ClientSide.Core/Scripts/jasmine
-ClientSide.Core/Scripts/library/jquery
-ClientSide.Core/Scripts/library/metro-ui
-ClientSide.Core/Scripts/library/router
-ClientSide.Core/Content/jasmine
-ClientSide.Core/Content/sprites
-ClientSide.Core/Styles/metro-ui
-ClientSide.Core/Styles/sprites
